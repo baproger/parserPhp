@@ -28,7 +28,7 @@ function getData( string $vincode )
     $className = 'details-card__stat-value';
 
 // Query elements by class name.
-    $nodes = $xpath->query("//*[contains(concat(' ', normalize-space(@class), ' '), ' $className ')]");
+    $nodes = $xpath->query("//*[contains(concat(' ', normalize-space(@class), '  '), ' $className ')]");
 
 // Output the content of the found nodes.
     foreach ($nodes as $node) {
